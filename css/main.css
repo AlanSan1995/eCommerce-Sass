@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body .menu {
+  display: flex;
+  align-items: center;
+  height: 125px;
+  border-bottom: 0.5px solid aquamarine; }
+  body .menu .menuToggle, body .menu .menu_open, body .menu .menu_close {
+    display: none; }
+  body .menu .logo {
+    width: 10%; }
+    body .menu .logo a > img {
+      width: 100%;
+      margin: 15px; }
+  body .menu > nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    body .menu > nav .enlace {
+      text-decoration: none;
+      font-family: "Roboto Mono", monospace;
+      color: yellowgreen; }
+
+body .pie {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellowgreen;
+  height: 55px;
+  padding: 0 10% 0 10%;
+  align-items: center;
+  margin-top: 50px; }
+  body .pie .redes_container {
+    display: flex;
+    align-items: center; }
+    body .pie .redes_container .redes {
+      margin-right: 20px; }
+      body .pie .redes_container .redes img {
+        width: 40px; }
+  body .pie .footer_link .nosotros {
+    margin-right: 90px; }
+  body .pie .footer_link .nosotros, body .pie .footer_link .vision {
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: antiquewhite; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.index main .carrucel {
+  margin: 25px 0 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .index main .carrucel img {
+    width: 80%; }
+
+.index main .productos, .index main .promociones {
+  margin-left: 10%;
+  margin-right: 10%; }
+  .index main .productos .vermas, .index main .promociones .vermas {
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: yellowgreen; }
+    .index main .productos .vermas:hover, .index main .promociones .vermas:hover {
+      border-bottom: 1px solid yellowgreen; }
+  .index main .productos .contenedor_productos, .index main .promociones .contenedor_productos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; }
+    .index main .productos .contenedor_productos .contenedor_articulo, .index main .promociones .contenedor_productos .contenedor_articulo {
+      width: 30%; }
+      .index main .productos .contenedor_productos .contenedor_articulo a, .index main .promociones .contenedor_productos .contenedor_articulo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Roboto Mono", monospace;
+        color: yellowgreen;
+        border: 1px yellowgreen solid;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        height: 100%; }
+      .index main .productos .contenedor_productos .contenedor_articulo > h2, .index main .promociones .contenedor_productos .contenedor_articulo > h2 {
+        margin: 10px 0 10px 0; }
+      .index main .productos .contenedor_productos .contenedor_articulo .articulo, .index main .promociones .contenedor_productos .contenedor_articulo .articulo {
+        width: 100%; }
+
+.index main .promociones {
+  margin-top: 30px; }
+
+.categorias main .titulo {
+  display: flex;
+  background-color: #ace8f3;
+  justify-content: center;
+  height: 50%; }
+  .categorias main .titulo h2 {
+    margin: 20px 10px;
+    font-family: "Dancing Script", cursive;
+    color: yellowgreen;
+    font-size: 50px; }
+
+.categorias main .carrucel {
+  margin: 25px 0 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .categorias main .carrucel img {
+    width: 80%; }
+
+.categorias main .productos, .categorias main .promociones {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2rem; }
+  .categorias main .productos .vermas, .categorias main .promociones .vermas {
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: yellowgreen;
+    font-size: 30px; }
+    .categorias main .productos .vermas:hover, .categorias main .promociones .vermas:hover {
+      border-bottom: 1px solid yellowgreen; }
+  .categorias main .productos .contenedor_productos, .categorias main .promociones .contenedor_productos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; }
+    .categorias main .productos .contenedor_productos .contenedor_articulo, .categorias main .promociones .contenedor_productos .contenedor_articulo {
+      width: 30%; }
+      .categorias main .productos .contenedor_productos .contenedor_articulo a, .categorias main .promociones .contenedor_productos .contenedor_articulo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Roboto Mono", monospace;
+        color: yellowgreen;
+        border: 1px yellowgreen solid;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        height: 100%; }
+      .categorias main .productos .contenedor_productos .contenedor_articulo > h2, .categorias main .promociones .contenedor_productos .contenedor_articulo > h2 {
+        margin: 10px 0 10px 0; }
+      .categorias main .productos .contenedor_productos .contenedor_articulo .articulo, .categorias main .promociones .contenedor_productos .contenedor_articulo .articulo {
+        width: 100%; }
+
+.contacto main .titulo {
+  display: flex;
+  background-color: #ace8f3;
+  justify-content: center;
+  height: 50%; }
+  .contacto main .titulo h2 {
+    margin: 20px 10px;
+    font-family: "Dancing Script", cursive;
+    color: yellowgreen;
+    font-size: 50px; }
+
+.contacto main .contacto_section {
+  display: flex;
+  justify-content: center; }
+  .contacto main .contacto_section .form_container {
+    width: 100%;
+    max-width: 600px;
+    background-color: aliceblue;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    margin-top: 30px; }
+    .contacto main .contacto_section .form_container .form {
+      width: 100%; }
+      .contacto main .contacto_section .form_container .form .input_name_box {
+        display: flex;
+        justify-content: space-between; }
+        .contacto main .contacto_section .form_container .form .input_name_box .form_input_name {
+          width: 48%; }
+      .contacto main .contacto_section .form_container .form .form_input, .contacto main .contacto_section .form_container .form .form_textarea {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0; }
+        .contacto main .contacto_section .form_container .form .form_input label, .contacto main .contacto_section .form_container .form .form_textarea label {
+          font-family: "Dancing Script", cursive;
+          color: yellowgreen;
+          font-size: 35px;
+          margin-bottom: 5px; }
+        .contacto main .contacto_section .form_container .form .form_input input, .contacto main .contacto_section .form_container .form .form_textarea input {
+          border: 0;
+          background: none;
+          outline: none;
+          border-bottom: 2px solid yellowgreen;
+          font-size: 16px;
+          color: #1b1b1b; }
+          .contacto main .contacto_section .form_container .form .form_input input::placeholder, .contacto main .contacto_section .form_container .form .form_textarea input::placeholder {
+            color: #5c555570; }
+        .contacto main .contacto_section .form_container .form .form_input textarea, .contacto main .contacto_section .form_container .form .form_textarea textarea {
+          width: 100%;
+          resize: none;
+          height: 190px;
+          border: 2px solid yellowgreen;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px; }
+      .contacto main .contacto_section .form_container .form .form_submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .contacto main .contacto_section .form_container .form .form_submit button {
+          padding: 10px 40px;
+          border: 0;
+          background: yellowgreen;
+          border-radius: 20px;
+          font-size: 20px;
+          cursor: pointer; }
+        .contacto main .contacto_section .form_container .form .form_submit p {
+          font-family: "Dancing Script", cursive;
+          color: yellowgreen;
+          font-size: 30px; }
