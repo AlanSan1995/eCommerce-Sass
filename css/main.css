@@ -288,3 +288,90 @@ body .pie {
 
 .body_productos .promociones {
   margin-top: 30px; }
+
+.ideas-e-inspiraciones main .titulo {
+  display: flex;
+  background-color: #ace8f3;
+  justify-content: center;
+  height: 50%; }
+  .ideas-e-inspiraciones main .titulo h2 {
+    margin: 20px 10px;
+    font-family: "Dancing Script", cursive;
+    color: yellowgreen;
+    font-size: 50px; }
+
+.ideas-e-inspiraciones main .galeria {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "imagen1 imagen2 imagen3 imagen3" "imagen1 imagen4 imagen5 imagen6" "imagen7 imagen4 imagen8 imagen8";
+  width: 100%;
+  grid-gap: 5px;
+  overflow: hidden; }
+  .ideas-e-inspiraciones main .galeria .galeria_item {
+    background-color: aquamarine;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s; }
+    .ideas-e-inspiraciones main .galeria .galeria_item:hover {
+      transform: scale(1.05); }
+  .ideas-e-inspiraciones main .galeria .galeria_item1 {
+    grid-area: imagen1;
+    background-image: url(../img/idea5.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item2 {
+    grid-area: imagen2;
+    background-image: url(../img/idea7.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item3 {
+    grid-area: imagen3;
+    background-image: url(../img/idea3.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item4 {
+    grid-area: imagen4;
+    background-image: url(../img/idea6.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item5 {
+    grid-area: imagen5;
+    background-image: url(../img/idea1.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item6 {
+    grid-area: imagen6;
+    background-image: url(../img/idea8.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item7 {
+    grid-area: imagen7;
+    background-image: url(../img/idea2.jpg); }
+  .ideas-e-inspiraciones main .galeria .galeria_item8 {
+    grid-area: imagen8;
+    background-image: url(../img/idea4.jpg); }
+
+.ideas-e-inspiraciones main .galeria_2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "imagen1 imagen2 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen6 imagen6 imagen4"  "imagen5 imagen6 imagen6 imagen6 imagen4";
+  width: 100%;
+  grid-gap: 5px;
+  overflow: hidden; }
+  .ideas-e-inspiraciones main .galeria_2 .item_to_galeri {
+    background-color: aquamarine;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s; }
+    .ideas-e-inspiraciones main .galeria_2 .item_to_galeri:hover {
+      transform: scale(1.1); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items1 {
+    grid-area: imagen1;
+    background-image: url(../img/idea14.jpg); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items2 {
+    grid-area: imagen2;
+    background-image: url(../img/idea10.jpg); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items3 {
+    grid-area: imagen3;
+    background-image: url(../img/idea13.jpg); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items4 {
+    grid-area: imagen4;
+    background-image: url(../img/idea11.jpg); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items5 {
+    grid-area: imagen5;
+    background-image: url(../img/idea9.jpg); }
+  .ideas-e-inspiraciones main .galeria_2 .galeri_items6 {
+    grid-area: imagen6;
+    background-image: url(../img/idea12.jpg); }
