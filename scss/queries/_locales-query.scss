@@ -1,0 +1,42 @@
+@media (max-width:750px) {
+    .locales{
+        main{
+            .contenedor_locales{
+                .local{
+                    width: 90%;
+                    margin: 2rem 0;
+                    >p{
+                        width: 50%;
+                        font-size: 13px;
+                    }
+                    iframe{
+                        width: 40%;
+                    }
+                
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width:550px) {
+    .locales{
+        main{
+            .contenedor_locales{
+                .local{
+                    flex-direction: column;
+                    justify-content:flex-start;
+                    margin: 1rem 0;
+                    > p{
+                    width: 100%;
+                    padding: 15px;
+                    margin-bottom: 2rem;
+                    }
+                    iframe{
+                    width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

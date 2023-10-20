@@ -1,0 +1,37 @@
+
+@media (max-width:650px) {
+    .contacto{
+        main{
+            .contacto_section{
+                .form_container{
+                    width: 90%;
+                    .form{
+                        font-size: 14px;
+                        .form_input , .form_textarea{
+                            label{
+                                font-size: 25px;
+                            }
+                            input{
+                                font-size: 14px;
+                        
+                            }
+                            textarea{
+                                font-size: 18px;
+                            }
+                        }
+                        .form_submit{
+                            button{
+                                padding: 10px 20px;
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

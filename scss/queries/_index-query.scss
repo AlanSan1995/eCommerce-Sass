@@ -1,0 +1,32 @@
+
+@media (max-width:768px){
+    .index{
+        main{
+            .productos, .promociones{
+                .contenedor_productos{
+                    flex-wrap: wrap;
+                    .contenedor_articulo{
+                        width: 47%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }   
+}
+@media (max-width:500px){
+    .index{
+        main{
+            .productos, .promociones{
+                .contenedor_productos{
+                    flex-direction: column;
+                    align-items: center;
+                    .contenedor_articulo{
+                        width: 80%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }   
+}
