@@ -96,6 +96,40 @@ body .pie {
 .index main .promociones {
   margin-top: 30px; }
 
+.locales main .titulo {
+  display: flex;
+  background-color: #ace8f3;
+  justify-content: center;
+  height: 50%; }
+  .locales main .titulo h2 {
+    margin: 20px 10px;
+    font-family: "Dancing Script", cursive;
+    color: yellowgreen;
+    font-size: 50px; }
+
+.locales main .contenedor_locales {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .locales main .contenedor_locales .local {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center; }
+    .locales main .contenedor_locales .local p {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      width: 60%;
+      padding: 30px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 14px;
+      height: fit-content; }
+    .locales main .contenedor_locales .local iframe {
+      width: 30%;
+      aspect-ratio: 1/1;
+      border: 0;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; }
+
 .categorias main .titulo {
   display: flex;
   background-color: #ace8f3;
@@ -216,3 +250,41 @@ body .pie {
           font-family: "Dancing Script", cursive;
           color: yellowgreen;
           font-size: 30px; }
+
+.body_productos main .titulo {
+  display: flex;
+  background-color: #ace8f3;
+  justify-content: center;
+  height: 50%; }
+  .body_productos main .titulo h2 {
+    margin: 20px 10px;
+    font-family: "Dancing Script", cursive;
+    color: yellowgreen;
+    font-size: 50px; }
+
+.body_productos main .contenedor_productos {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .body_productos main .contenedor_productos .contenedor_articulo {
+    width: 15%;
+    margin: 1%; }
+    .body_productos main .contenedor_productos .contenedor_articulo a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      font-family: "Roboto Mono", monospace;
+      color: yellowgreen;
+      border: 1px yellowgreen solid;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      height: 100%; }
+    .body_productos main .contenedor_productos .contenedor_articulo > h2 {
+      margin: 10px 0 10px 0; }
+    .body_productos main .contenedor_productos .contenedor_articulo .articulo {
+      width: 100%; }
+
+.body_productos .promociones {
+  margin-top: 30px; }
