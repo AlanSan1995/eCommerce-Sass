@@ -4,19 +4,39 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     .menu{
         display: flex;
         align-items: center;
         height: 125px;
         border-bottom: .5px solid  $backgraund_primary_color ;
+
+        animation-name: menu_animacion;
+        animation-duration: 3s ;
+        animation-timing-function: ease-out;
+        @keyframes menu_animacion {
+            from {
+                transform:translateY(-100%);
+                opacity: 0;
+            
+            }
+            to { 
+                transform:translateY(0%);
+                opacity: 1;
+            }
+        }
+
         .menuToggle,.menu_open,.menu_close{
             display: none;
         }
         .logo{
-            width: 10%;
+            height: 80%;
+            margin-left: 20px;
             a > img{
-                width: 100%;
-                margin: 15px;
+                height: 100%;
+                
             }
         }
         > nav{
@@ -30,6 +50,9 @@ body{
                 color: $primary_color;
             }
         }
+    }
+    main{
+        flex: 1;
     }
     .pie{
         display: flex;

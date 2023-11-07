@@ -5,49 +5,65 @@
   margin: 0;
   box-sizing: border-box; }
 
-body .menu {
+body {
   display: flex;
-  align-items: center;
-  height: 125px;
-  border-bottom: 0.5px solid aquamarine; }
-  body .menu .menuToggle, body .menu .menu_open, body .menu .menu_close {
-    display: none; }
-  body .menu .logo {
-    width: 10%; }
-    body .menu .logo a > img {
-      width: 100%;
-      margin: 15px; }
-  body .menu > nav {
-    width: 90%;
+  flex-direction: column;
+  min-height: 100vh; }
+  body .menu {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    body .menu > nav .enlace {
+    align-items: center;
+    height: 125px;
+    border-bottom: 0.5px solid aquamarine;
+    animation-name: menu_animacion;
+    animation-duration: 3s;
+    animation-timing-function: ease-out; }
+
+@keyframes menu_animacion {
+  from {
+    transform: translateY(-100%);
+    opacity: 0; }
+  to {
+    transform: translateY(0%);
+    opacity: 1; } }
+    body .menu .menuToggle, body .menu .menu_open, body .menu .menu_close {
+      display: none; }
+    body .menu .logo {
+      height: 80%;
+      margin-left: 20px; }
+      body .menu .logo a > img {
+        height: 100%; }
+    body .menu > nav {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      body .menu > nav .enlace {
+        text-decoration: none;
+        font-family: "Roboto Mono", monospace;
+        color: yellowgreen; }
+  body main {
+    flex: 1; }
+  body .pie {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellowgreen;
+    height: 55px;
+    padding: 0 10% 0 10%;
+    align-items: center;
+    margin-top: 50px; }
+    body .pie .redes_container {
+      display: flex;
+      align-items: center; }
+      body .pie .redes_container .redes {
+        margin-right: 20px; }
+        body .pie .redes_container .redes img {
+          width: 40px; }
+    body .pie .footer_link .nosotros {
+      margin-right: 90px; }
+    body .pie .footer_link .nosotros, body .pie .footer_link .vision {
       text-decoration: none;
       font-family: "Roboto Mono", monospace;
-      color: yellowgreen; }
-
-body .pie {
-  display: flex;
-  justify-content: space-between;
-  background-color: yellowgreen;
-  height: 55px;
-  padding: 0 10% 0 10%;
-  align-items: center;
-  margin-top: 50px; }
-  body .pie .redes_container {
-    display: flex;
-    align-items: center; }
-    body .pie .redes_container .redes {
-      margin-right: 20px; }
-      body .pie .redes_container .redes img {
-        width: 40px; }
-  body .pie .footer_link .nosotros {
-    margin-right: 90px; }
-  body .pie .footer_link .nosotros, body .pie .footer_link .vision {
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-    color: antiquewhite; }
+      color: antiquewhite; }
 
 * {
   padding: 0;
