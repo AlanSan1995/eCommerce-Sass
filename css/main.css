@@ -74,7 +74,8 @@ body {
   margin: 25px 0 15px 0;
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: initial; }
   .index main .carrucel img {
     width: 80%; }
 
@@ -90,12 +91,14 @@ body {
   .index main .productos .contenedor_productos, .index main .promociones .contenedor_productos {
     margin-top: 60px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: initial; }
     .index main .productos .contenedor_productos .contenedor_articulo, .index main .promociones .contenedor_productos .contenedor_articulo {
       width: 30%; }
       .index main .productos .contenedor_productos .contenedor_articulo a, .index main .promociones .contenedor_productos .contenedor_articulo a {
-        display: flex;
         flex-direction: column;
+        display: flex;
+        justify-content: initial;
         align-items: center;
         text-align: center;
         text-decoration: none;
@@ -316,6 +319,14 @@ body {
     color: yellowgreen;
     font-size: 50px; }
 
+.ideas-e-inspiraciones main .galeria_item_styles, .ideas-e-inspiraciones main .galeria .galeria_item, .ideas-e-inspiraciones main .galeria_2 .item_to_galeri {
+  background-color: aquamarine;
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s; }
+  .ideas-e-inspiraciones main .galeria_item_styles:hover, .ideas-e-inspiraciones main .galeria .galeria_item:hover, .ideas-e-inspiraciones main .galeria_2 .item_to_galeri:hover {
+    transform: scale(1.05); }
+
 .ideas-e-inspiraciones main .galeria {
   height: 100vh;
   display: grid;
@@ -325,13 +336,6 @@ body {
   width: 100%;
   grid-gap: 5px;
   overflow: hidden; }
-  .ideas-e-inspiraciones main .galeria .galeria_item {
-    background-color: aquamarine;
-    background-position: center;
-    background-size: cover;
-    transition: 0.3s; }
-    .ideas-e-inspiraciones main .galeria .galeria_item:hover {
-      transform: scale(1.05); }
   .ideas-e-inspiraciones main .galeria .galeria_item1 {
     grid-area: imagen1;
     background-image: url(../img/idea5.jpg); }
@@ -366,13 +370,6 @@ body {
   width: 100%;
   grid-gap: 5px;
   overflow: hidden; }
-  .ideas-e-inspiraciones main .galeria_2 .item_to_galeri {
-    background-color: aquamarine;
-    background-position: center;
-    background-size: cover;
-    transition: 0.3s; }
-    .ideas-e-inspiraciones main .galeria_2 .item_to_galeri:hover {
-      transform: scale(1.1); }
   .ideas-e-inspiraciones main .galeria_2 .galeri_items1 {
     grid-area: imagen1;
     background-image: url(../img/idea14.jpg); }

@@ -3,13 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+@mixin flex ($align: initial , $justify: initial ) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
 .index{
     main{
         .carrucel{
             margin: 25px 0 15px 0 ;
             width: 100%;
-            display: flex;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
+            @include flex( initial , center );
             img{
                 width: 80%;
             }
@@ -27,14 +36,16 @@
             }
             .contenedor_productos{
                 margin-top: 60px;
-                display: flex;
-                justify-content: space-between;
+                @include flex(initial,space-between);
+                // display: flex;
+                // justify-content:space-between;
                 .contenedor_articulo{
                     width: 30%;
                     a{
-                        display: flex;
+                        // display: flex;
                         flex-direction: column;
-                        align-items: center;
+                        //align-items: center;
+                        @include flex(center);
                         text-align: center;
                         text-decoration: none;
                         font-family: $primary_font;
